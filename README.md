@@ -9,5 +9,10 @@
 
 ## Tech Used
 
+HTML 5
+CSS
+JavaScript
+AngularJS
+
 
 ## Contributing

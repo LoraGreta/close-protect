@@ -23,6 +23,8 @@
             text-align: center;
             font-family: Arial;
         }
+
+        
     /** CONTAINER**/
 
         .flexcontainer{
@@ -32,6 +34,7 @@
             justify-content: space-between;
             -webkit-flex-wrap:wrap;
             padding-top: 25px;   
+
         }
         /**NAVBAR**/
 
@@ -77,10 +80,7 @@
                 opacity: 1;
              }
 
-            .desc {
-                padding-bottom: 30px;
-             }
-
+         
             .bottom-menu ul {
                 list-style-type: none;
              }
@@ -102,13 +102,50 @@
             font-size: 20px;
          }
 
-        .row{
+            /** Main Cntent **/
+        .row-top{
             position: relative;
             opacity:.6;
             background-color: white;
             border-radius: 10%;
             display: block;
             margin: 10px;
+            color:black;
+            height: 200px;
+        }
+
+        .row-bottom{
+            position: relative;
+            opacity:.6;
+            background-color: white;
+            border-radius: 10%;
+            display: block;
+            margin: 10px;
+            color:black;
+            height: 200px;
+
+        }
+
+        .row-top a img{
+            height: 120px;
+            width: 120px;
+            opacity: 1;
+            float:right;
+            border:2px solid black;
+        }
+
+        .row-bottom a img{
+            height: 120px;
+            width: 120px;
+            opacity: 1;
+            float:left;
+            border:2px solid black;
+        }
+        /** Buttons**/
+
+        .btn{
+        margin: 10px;
+
         }
         .everything{
             margin-top: 100px;
@@ -147,14 +184,14 @@
             <div class="col-sm-3">
                 <div id="sidebar">
                     <ul>
-                        
-                        <li class="has-dropdown"><a href="#"> ABOUT US </a></li>
-                            <ul class="dropdown"> <li><a href="#"> SERVICES</a></li>
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> LOCATIONS </a></li>
-                        
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> RECOMMENDATIONS </a></li> 
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> CONTACT </a></li>
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> STATISTICS </a></li>
+                        <li class="has-dropdown"><a href="#"> HOME </a></li>
+                            <ul class="dropdown"> <li><a href="#"> ABOUT US</a></li>
+                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> CARGO </a></li>
+                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> EVENT SECURITY </a></li>
+                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> DOGS </a></li>
+                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> TRAINING </a></li>
+                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li>
+                            <li> <a href="#"> CONTACT </a></li>
                     </ul>
                     
                 </div>
@@ -162,10 +199,78 @@
 
             <div class="col-sm-9">
                 <div class="#">
-                    <div class="#"> 
-                        <div class="row">
+                    
+                        <div class="row-top">
                         <h1> CLOSE PROTECTION</h1>
-                        <p class="desc"> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure. Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed.  <a href="#"><img src="img/closeprotection.jpg">
-                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </a></p>
+                        <a href="#"><img src="img/closeprotection.jpg"></a>
+                        <h4> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure.  Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed. </h4> 
                     </div>
+
+                    <div class="row-bottom">
+                        <h1> SERVICES </h1>
+                         <a href="#"><img src="img/closeprotection.jpg"></a>
+                        <h4> We provide <strong> chaffeurs</strong>,<strong> bodyguards</strong>, <strong>concierges</strong>, <strong>door supervisors</strong>, <strong>event security</strong>, and <strong>estate security protection experts</strong>. Please note that we do not hire outside contractors. We are a large nuclear group of individuals who have all worked together in teams for years on successful contracts, and we will supply you with the best matching expert(s) for your needs. We provide close protection for adults and children. 
+                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </h4>
+                    </div>
+
                 </div>
+
+         <a href="#" img src="img/security4.jpg">
+            </a>
+            </div>
+        </div>
+
+
+        <div class="bottom-menu">
+             <ul>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <img src="img/facebook.png">
+                    </a>
+                </li>
+                
+               <li>
+                    <a href="http://www.twitter.com">
+                        <img src="img/twitter.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.instagram.com">
+                        <img src="img/instagram.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/telephone.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.email.com">
+                        <img src="img/email.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.youtube.com">
+                        <img src="img/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/protect-app.start.js"></script>
+</body>
+</html>

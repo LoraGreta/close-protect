@@ -48,7 +48,7 @@
 
         /**BOTTOM NAVIGATION (Buttons won't space out)**/
             .bottom-menu{
-                position:relative;
+                position:fixed;
                 bottom:0;
                 width: 100%;
                 font-size: 2em; 
@@ -58,7 +58,7 @@
             .bottom-menu ul a li{
                 float:left;
                 list-style:none;
-                width:12%;
+                width:10%;
                 height:100%; 
                 padding:5.0%;
                 opacity:0.5;
@@ -68,13 +68,13 @@
                 bottom-border: 4px solid black;
             }
             .bottom-menu ul li img{
-                margin-left: 70px;
+                margin-left: 150px;
                 height: 30px;
                 width: 30px;
                 opacity: .6;
             }
             .bottom-menu ul li a:hover{
-                color: red;
+                opacity: 1;
              }
 
             .desc {
@@ -94,25 +94,19 @@
         #sidebar{
             position: relative;
             margin-top: 15px;
-            height: 500px;
+            height: 940px;
          }
          #sidebar a{
             list-style-type: none;
             color: white;
             font-size: 20px;
          }
-        #sidebar a img{
-            margin-top: 20px;
-            height: 260px;
-            width: 360px;
-            border: 5px solid black;
-         }
 
         .row{
             position: relative;
             opacity:.6;
             background-color: white;
-            border-radius: 5%;
+            border-radius: 10%;
             display: block;
             margin: 10px;
         }
@@ -121,35 +115,32 @@
             list-style-type: none;
         }
 
-        .btn{
-        margin: 10px;
-
-        }
         
     </style>
 
 </head> 
 <body ng-app='close-protect'>
     <div class="container">    
-                
 
-                <!-- LOGO -->
         <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="MainCtrl">
             <div class="container">
                 <div class="navbar-header" data-top bar role="navigation">
                     <a class="navbar-brand" href="#"> <img src="img/logo.png"></a>
-                </div>               
-        
-                    <ul class="title-area">
-                        <li class-"name">
-                        <h1> <a href="#"> THE TRIAD GROUP </a></h1>
-                        </li>
-                        <li class="toggle-topbar menu-icon navbar-right"> 
-                        <a href="#"><span> CHECK AS SAFE </span></a>
-                        <li>
-                    </ul>
-             </div>
+                </div>
 
+                        
+                    </a>
+                <!-- LOGO -->
+
+                <ul class="title-area">
+                    <li class-"name">
+                        <h1> <a href="#"> THE TRIAD GROUP </a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon navbar-right"> 
+                        <a href="#"><span> CHECK AS SAFE </span></a>
+                    <li>
+                </ul>
+            </div>
         </nav>
 
         <div class="everything">
@@ -157,69 +148,30 @@
                 <div id="sidebar">
                     <ul>
                         
-                        <li class="has-dropdown"><a href="/about.html"> ABOUT US </a></li>
-                            <ul class="dropdown"> 
-                                <li> <a href="#"> SERVICES </a></li>
-                                <li> <a href="#"> LOCATIONS </a></li>
-                                <li> <a href="/contact.html"> CONTACT </a></li>
-                                
-                                <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li> 
-
-                    </ul>  
-                    <a href="#"> <img src="img/greenwich.jpg"></a>       
+                        <li class="has-dropdown"><a href="#"> ABOUT US </a></li>
+                            <ul class="dropdown"> <li><a href="#"> SERVICES</a></li>
+                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> LOCATIONS </a></li>
+                        
+                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> RECOMMENDATIONS </a></li> 
+                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> CONTACT </a></li>
+                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> STATISTICS </a></li>
+                    </ul>
+                    
                 </div>
             </div>
 
             <div class="col-sm-9">
-                <div class=""> 
-                    <div class="">
+                <div class="#">
+                    <div class="#"> 
                         <div class="row">
-                        <h1> Close Protection </h1>
-                        <p class="desc"> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure. Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed.  <a href="/close-protection.html" role="button" class="btn btn-default"> Learn More </a></p>
+                        <h1> CARGO TRANSPORT</h1>
+                        <p class="desc"> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure. Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed.  <a href="#"><img src="img/lorry.jpg">
+                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </a></p>
                     </div>
                 </div>
 
 
-                <div class=""> 
-                    <div class="">
-                        <div class="row">
-                        <h1> Cargo Transport </h1>
-                        <p> Out team is repsonsible for securing cargo and shipments from intitial receipt to final destination. We have 20 years in a changing political climate across Europe and South Africa in transporting valuable cargo, and have secured contacts year on year with some of the world's leading companies. Our track record speaks for itself. <a href="/cargotransport.html" role= "button" class= "btn btn-default"> Learn more </a></p>           
-                    </div>
-                </div>
-
-                <div class=""> 
-                    <div class="">
-                        <div class="row">
-                        <h1> Event Security </h1>
-                        <p> Whether you need Security for festivals, concerts, or sporting events in Europe, America, the UK or South Africa, we have experienced teams ready to assist. All our CPSE's  are experienced in event security and crowd control for festivals, and riot control for more volatile situations. <a href="/eventsecurity.html" role="button" class= "btn btn-default"> Learn More </a></p>
-                    </div>
-                </div>
-
-                <div class=""> 
-                    <div class="">
-                        <div class="row">
-                        <h1> Protection Dogs </h1>
-                        <p> We supply Cane Corso Mastiffs, trained to suit your needs. They can be given basic training only, or any level of protection training needed. We have many references detailing how our dogs have become brilliant Estate Dogs. Gentle with children and families and protective of the family unit.<a href="/dogs.html" role="button" class= "btn btn-default"> Learn More </a> </p>
-                    </div>
-                </div>
-
-                <div class=""> 
-                    <div class="">
-                        <div class="row">
-                        <h1> Training </h1>
-                        <p> We provide classroom training in London to get your SIA licence with our SIA approved course. In addition, we provide tactical training (close range and sniper shooting, evasive car meanuovers, survival techniques) in our private location in Romania. Go beyond basic training and become trained in threat and risk assessment, operational planning, and law <a href="/trainingpage.html" role="button" class= "btn btn-default"> Learn More </a> </p>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </div>
-
-        <div class="container">
-            <div class="row"> <a href="#" img src="img/security4.jpg">
-            </a>
-            </div>
-        </div>
+               
 
 
         <div class="bottom-menu">

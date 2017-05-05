@@ -3,15 +3,281 @@
 <head>
     <base href="/"> 
     <meta name="viewport" content="width=device-width", initial scale=1>
-    <title>Contact US</title>
+    <title>Close Protect Boiler Template</title>
     <link rel="stylesheet" type="text/css" src="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" src="/index.html">
-     
+    
     <style type="text/css">
+       
+         /**BACKGROUND**/   
+        body{     
+            background-image: url("img/background1.jpg");
+            background-repeat: contain;  
+            color:black;
 
-</style></head>
-<body>
-	
+        }
+        img{
+            max-width: 100%;
+         }
+        h1{
+            text-align: center;
+            font-family: Arial;
+        }
+
+        
+    /** CONTAINER**/
+
+        .flexcontainer{
+            font-color: white;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            -webkit-flex-wrap:wrap;
+            padding-top: 25px;   
+
+        }
+        /**NAVBAR**/
+
+        .navbar a{
+            list-style-type: none;
+            color: white;
+
+        }
+         .navbar-header a img{
+                height: 70px;
+                width: 70px;
+                
+            }
+
+        /**BOTTOM NAVIGATION (Buttons won't space out)**/
+            .bottom-menu{
+                position:fixed;
+                bottom:0;
+                width: 100%;
+                font-size: 2em; 
+                background-color:black;
+                opacity:.8;            
+            }
+            .bottom-menu ul a li{
+                float:left;
+                list-style:none;
+                width:10%;
+                height:100%; 
+                padding:5.0%;
+                opacity:0.5;
+                margin: 5px;  
+                text-align: center;
+                text-decoration: none;
+                bottom-border: 4px solid black;
+            }
+            .bottom-menu ul li img{
+                margin-left: 150px;
+                height: 30px;
+                width: 30px;
+                opacity: .6;
+            }
+            .bottom-menu ul li a:hover{
+                opacity: 1;
+             }
+
+         
+            .bottom-menu ul {
+                list-style-type: none;
+             }
+
+             .bottom-menu ul li {
+                display : inline;
+             }
+
+         /**SIDEBAR (working but has bullets)**/
+
+        #sidebar{
+            position: relative;
+            margin-top: 15px;
+            height: 940px;
+         }
+         #sidebar a{
+            list-style-type: none;
+            color: white;
+            font-size: 20px;
+         }
+
+         #sidebar a img{
+            height: 130px;
+            width: 280px;
+         }
+
+            /** Main Cntent **/
+        .row-top{
+            position: relative;
+            opacity:.6;
+            background-color: white;
+            border-radius: 10%;
+            display: block;
+            margin: 10px;
+            color:black;
+            height: 200px;
+        }
+
+        .row-bottom{
+            position: relative;
+            opacity:.6;
+            background-color: white;
+            border-radius: 10%;
+            display: block;
+            margin: 10px;
+            color:black;
+            height: 200px;
+
+        }
+
+        .row-top a img{
+            height: 120px;
+            width: 120px;
+            opacity: 1;
+            float:right;
+            border:2px solid black;
+        }
+
+        .row-bottom a img{
+            height: 220px;
+            width: 220px;
+            opacity: 1;
+            float:left;
+            border:2px solid black;
+        }
+        /** Buttons**/
+
+        .btn{
+        margin: 10px;
+
+        }
+        .everything{
+            margin-top: 100px;
+            list-style-type: none;
+            height: 400px
+        }
+
+        
+    </style>
+
+</head> 
+<body ng-app='close-protect'>
+    <div class="container">    
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="MainCtrl">
+            <div class="container">
+                <div class="navbar-header" data-top bar role="navigation">
+                    <a class="navbar-brand" href="#"> <img src="img/logo.png"></a>
+                </div>
+
+                        
+                    </a>
+                <!-- LOGO -->
+
+                <ul class="title-area">
+                    <li class-"name">
+                        <h1> <a href="#"> THE TRIAD GROUP </a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon navbar-right"> 
+                        <a href="#"><span> CHECK AS SAFE </span></a>
+                    <li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="everything">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul>
+                        <li class="has-dropdown"><a href="/index.html"> HOME </a></li>
+                            <ul class="dropdown"> 
+                            	<li><a href="/about.html"> ABOUT US</a></li>
+                            	<li> <a href="/cargotransport.html"> CARGO </a></li>
+                            	<li> <a href="/eventsecurity.html"> EVENT SECURITY </a></li>
+                            	<li> <a href="/dogs.html"> DOGS </a></li>
+                            	<li> <a href="/trainingpage.html"> TRAINING </a></li>
+                            	<li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li> 
+                            	<li> <a href="/contact.html"> CONTACT </a></li>
+                    			<a href="#"><img src="img/security2.jpg"></a>         
+                    		</ul>
+                    <ul>
+           </div>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="#">
+                    
+                        <div class="row-top">
+                        <h1> CLOSE PROTECTION</h1>
+                        <a href="#"><img src="img/closeprotection.jpg"></a>
+                        <h4> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure.  Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed. </h4> 
+                    </div>
+
+                    <div class="row-bottom">
+                        <h1> SERVICES </h1>
+                        <h4> We provide <strong> chaffeurs</strong>,<strong> bodyguards</strong>, <strong>concierges</strong>, <strong>door supervisors</strong>, <strong>event security</strong>, and <strong>estate security protection experts</strong>. Please note that we do not hire outside contractors. We are a large nuclear group of individuals who have all worked together in teams for years on successful contracts, and we will supply you with the best matching expert(s) for your needs. We provide close protection for adults and children. 
+                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </h4>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class= "everything-bottom">
+        	<div class="col-md-4">
+        		<h2> CLose-Protection, Bodyguards and Estate Security <h2>
+
+        <div class="bottom-menu">
+             <ul>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <img src="img/facebook.png">
+                    </a>
+                </li>
+                
+               <li>
+                    <a href="http://www.twitter.com">
+                        <img src="img/twitter.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.instagram.com">
+                        <img src="img/instagram.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/telephone.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.email.com">
+                        <img src="img/email.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.youtube.com">
+                        <img src="img/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/protect-app.start.js"></script>
 </body>
 </html>

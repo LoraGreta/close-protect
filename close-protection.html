@@ -51,27 +51,28 @@
 
         /**BOTTOM NAVIGATION (Buttons won't space out)**/
             .bottom-menu{
-                position:fixed;
+                position: fixed;
+                margin-left: 50px;
                 bottom:0;
                 width: 100%;
                 font-size: 2em; 
                 background-color:black;
-                opacity:.8;            
+                opacity:.8; 
+                margin-left:50px;           
             }
             .bottom-menu ul a li{
-                float:left;
                 list-style:none;
-                width:10%;
+                width:13%;
                 height:100%; 
                 padding:5.0%;
                 opacity:0.5;
-                margin: 5px;  
+                margin-left: 5px;  
                 text-align: center;
                 text-decoration: none;
                 bottom-border: 4px solid black;
             }
             .bottom-menu ul li img{
-                margin-left: 150px;
+                margin-left: 120px;
                 height: 30px;
                 width: 30px;
                 opacity: .6;
@@ -92,35 +93,40 @@
          /**SIDEBAR (working but has bullets)**/
 
         #sidebar{
-            position: relative;
+            position: relative;        
             margin-top: 15px;
-            height: 940px;
+            height: 400px;
          }
-         #sidebar a{
-            list-style-type: none;
+         #sidebar li a{
+            list-style-type: square;
             color: white;
             font-size: 20px;
          }
+         #sidebar a img{
+            margin-top: 50px;
+            margin-left:30px;
+            height: 100px;
+            width: 200px;
+         }
 
-            /** Main Cntent **/
+            /** Main Content **/
         .row-top{
             position: relative;
             opacity:.6;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 5%;
             display: block;
-            margin: 10px;
+            margin: 5px;
             color:black;
             height: 200px;
         }
 
         .row-bottom{
-            position: relative;
             opacity:.6;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 5%;
             display: block;
-            margin: 10px;
+            margin: 5px;
             color:black;
             height: 200px;
 
@@ -135,8 +141,8 @@
         }
 
         .row-bottom a img{
-            height: 120px;
-            width: 120px;
+            height: 220px;
+            width: 220px;
             opacity: 1;
             float:left;
             border:2px solid black;
@@ -144,15 +150,33 @@
         /** Buttons**/
 
         .btn{
-        margin: 10px;
+            margin-left:220px;
+            margin-bottom: 20px;
+            background-color: #bc9b73;
+            color: black;
+            border: 1px solid black;
 
         }
         .everything{
             margin-top: 100px;
             list-style-type: none;
+            height: 400px;
         }
 
-        
+        .everything h4{
+            margin-left:5px;
+        }
+       
+        .everything-bottom{
+            width: 1200px;
+            height: 350px;
+            margin: 50px;
+            background-color: #72767c;
+            border-top: 20px solid black;
+            border-right: 20px solid black;
+        }
+
+
     </style>
 
 </head> 
@@ -182,42 +206,60 @@
 
         <div class="everything">
             <div class="col-sm-3">
-                <div id="sidebar">
+                <div id="sidebar"> 
                     <ul>
-                        <li class="has-dropdown"><a href="#"> HOME </a></li>
-                            <ul class="dropdown"> <li><a href="#"> ABOUT US</a></li>
-                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> CARGO </a></li>
-                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> EVENT SECURITY </a></li>
-                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> DOGS </a></li>
-                            <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> TRAINING </a></li>
+                        <li><a href="/index.html"> HOME </a></li>
+                            <li><a href="/about.html"> ABOUT US</a></li>
+                            <li> <a href="/cargotransport.html"> CARGO </a></li>
+                            <li> <a href="/eventsecurity.html"> EVENT SECURITY </a></li>
+                            <li> <a href="/dogs.html"> DOGS </a></li>
+                            <li> <a href="/trainingpage.html"> TRAINING </a></li>
                             <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li>
-                            <li> <a href="#"> CONTACT </a></li>
+                            <li> <a href="/contact.html"> CONTACT </a></li>
                     </ul>
+                    <a href="#"><img src="img/security2.jpg"></a>
                     
                 </div>
             </div>
 
             <div class="col-sm-9">
-                <div class="#">
-                    
+                <div class="maincontainer">
                         <div class="row-top">
-                        <h1> CLOSE PROTECTION</h1>
+                        <h1> Close Protection</h1>
                         <a href="#"><img src="img/closeprotection.jpg"></a>
                         <h4> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure.  Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed. </h4> 
                     </div>
 
                     <div class="row-bottom">
-                        <h1> SERVICES </h1>
-                         <a href="#"><img src="img/closeprotection.jpg"></a>
-                        <h4> We provide <strong> chaffeurs</strong>,<strong> bodyguards</strong>, <strong>concierges</strong>, <strong>door supervisors</strong>, <strong>event security</strong>, and <strong>estate security protection experts</strong>. Please note that we do not hire outside contractors. We are a large nuclear group of individuals who have all worked together in teams for years on successful contracts, and we will supply you with the best matching expert(s) for your needs. We provide close protection for adults and children. 
-                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </h4>
+                        <h1> Services </h1>
+                        <h4> We provide <strong> chaffeurs</strong>,<strong> bodyguards</strong>, <strong>concierges</strong>, <strong>door supervisors</strong>, <strong>event security</strong>, and <strong>estate security protection experts</strong>. Please note that we do not hire outside contractors. We are a large nuclear group of individuals who have all worked together in teams for years on successful contracts, and we will supply you with the best matching expert(s) for your needs. We provide close protection for adults and children. </h4>
+                        <a href="#" role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </a>
                     </div>
 
                 </div>
-
-         <a href="#" img src="img/security4.jpg">
-            </a>
             </div>
+        </div>
+
+        <div class= "everything-bottom">
+                <div class="col-md-3">
+                    <h2> Residential Security </h2>
+                    <p> We have experience  in providing seasonal, holiday, and yearly security in London, Paris, Dubai, Rome, and Johannesburg for residences and estates. We have several long-term contracts in London and we can provide experts teams or individually. All our experts are expereinced in CCTV, computers, alarm systems, ground control, and visitor flow </p>
+                </div>
+            
+                <div class="col-md-3">
+                <h2> Firearms </h2> 
+                <p> Our experts are all experienced with firearms and are experienced marksmen with proven track records. Since all our experts have military backgrounds, we are confident in our ability to protect our clientelle. We also provide firearm training in Romania as part of our training courses. Please contact us for more information. </p>
+                 </div>
+            
+                <div class="col-md-3">
+                <h2> Door Supervisors </h2>
+                <p> We have experienced teams and individuals who are experienced in door work. Please contact us for availablitilty for one-off event and weekend work. Our doormen are selected for calm, engaging personality as well as physical ability and intellect. London and surrounding areas only. </p>
+                 </div>
+
+                 <div class="col-md-3">
+                <h2> Chaffeurs</h2>
+                <p> Our close-protection chaffeurs have been utilized in high profile custody cases where children needed protecting, divorce cases, celebrity night hopping, and for longer-term contracts where our clientelle needed peace of mind. Our chaffeurs are all trained in defensive and offensive driving in London, Rio de Jeneiro, and New York city. We also train individuals in Romania (subject to vetting and application approval).</p>
+                 </div>
         </div>
 
 

@@ -51,7 +51,7 @@
 
         /**BOTTOM NAVIGATION (Buttons won't space out)**/
             .bottom-menu{
-                position:fixed;
+                position:relative;
                 bottom:0;
                 width: 100%;
                 font-size: 2em; 
@@ -108,44 +108,8 @@
          }
 
             /** Main Cntent **/
-        .row-top{
-            position: relative;
-            opacity:.6;
-            background-color: white;
-            border-radius: 10%;
-            display: block;
-            margin: 10px;
-            color:black;
-            height: 200px;
-        }
+        
 
-        .row-bottom{
-            position: relative;
-            opacity:.6;
-            background-color: white;
-            border-radius: 10%;
-            display: block;
-            margin: 10px;
-            color:black;
-            height: 200px;
-
-        }
-
-        .row-top a img{
-            height: 120px;
-            width: 120px;
-            opacity: 1;
-            float:right;
-            border:2px solid black;
-        }
-
-        .row-bottom a img{
-            height: 220px;
-            width: 220px;
-            opacity: 1;
-            float:left;
-            border:2px solid black;
-        }
         /** Buttons**/
 
         .btn{
@@ -180,7 +144,7 @@
                         <h1> <a href="#"> THE TRIAD GROUP </a></h1>
                     </li>
                     <li class="toggle-topbar menu-icon navbar-right"> 
-                        <a href="#"><span> CHECK AS SAFE </span></a>
+                        <a href="#"><span> <em> TIGER TEAMS: CHECK IN AS SAFE </em>  </span></a>
                     <li>
                 </ul>
             </div>
@@ -190,44 +154,69 @@
             <div class="col-sm-3">
                 <div id="sidebar">
                     <ul>
-                        <li class="has-dropdown"><a href="/index.html"> HOME </a></li>
-                            <ul class="dropdown"> 
-                            	<li><a href="/about.html"> ABOUT US</a></li>
+                                <li><a href="/index.html"> HOME </a></li>
+                                <li><a href="/about.html"> ABOUT US</a></li>
+                                <li> <a href="/close-protection.html"> CLOSE PROTECTION</a></li>
                             	<li> <a href="/cargotransport.html"> CARGO </a></li>
                             	<li> <a href="/eventsecurity.html"> EVENT SECURITY </a></li>
                             	<li> <a href="/dogs.html"> DOGS </a></li>
                             	<li> <a href="/trainingpage.html"> TRAINING </a></li>
                             	<li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li> 
-                            	<li> <a href="/contact.html"> CONTACT </a></li>
-                    			<a href="#"><img src="img/security2.jpg"></a>         
+                            	
+                    			      
                     		</ul>
+
                     <ul>
-           </div>
-            </div>
-
-            <div class="col-sm-9">
-                <div class="#">
-                    
-                        <div class="row-top">
-                        <h1> CLOSE PROTECTION</h1>
-                        <a href="#"><img src="img/closeprotection.jpg"></a>
-                        <h4> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure.  Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed. </h4> 
-                    </div>
-
-                    <div class="row-bottom">
-                        <h1> SERVICES </h1>
-                        <h4> We provide <strong> chaffeurs</strong>,<strong> bodyguards</strong>, <strong>concierges</strong>, <strong>door supervisors</strong>, <strong>event security</strong>, and <strong>estate security protection experts</strong>. Please note that we do not hire outside contractors. We are a large nuclear group of individuals who have all worked together in teams for years on successful contracts, and we will supply you with the best matching expert(s) for your needs. We provide close protection for adults and children. 
-                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </h4>
-                    </div>
-
                 </div>
+            </div>
+    
+          
+             <div class="col-sm-8">
+                <form name="registrationForm" ng-submit="submitForm()" novalidate>
+                    <div class="form-group">
+                        <label>Please Enter First Name</label>
+                        <input type="text" name="firstname" class="form-control" ng-model="user.firstname" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label>Please Enter Last Name</label>
+                        <input type="text" name="lastname" class="form-control" ng-model="user.lastname" required>
+                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your name is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <input type="country" name="country" class="form-control" ng-model="user.country" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block">Your country is required</p>
+                    </div>
+                     <div class="form-group">
+                        <label>Telephone (please remember country code)</label>
+                        <input type="telephone" name="telephpne" class="form-control" ng-model="user.telephone" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block">Telephone is required</p>
+                    </div>
+                     <div class="form-group">
+                        <label>Email </label>
+                        <input type="email" name="email" class="form-control" ng-model="user.email" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block">Email is required</p>
+                    </div>
+                     <div class="form-group">
+                        <label>Please Tell Us Your Needs</label>
+                        <input type="text" name="text" class="form-control" ng-model="user.text" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block">Text is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Please Tell Us Your Needs</label>
+                        <input type="text" name="text" class="form-control" ng-model="user.text" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block">Text is required</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+                </form>
+                
+            </div>
             </div>
         </div>
-        <div class= "everything-bottom">
-        	<div class="col-md-4">
-        		<h2> CLose-Protection, Bodyguards and Estate Security <h2>
+   
 
+       
         <div class="bottom-menu">
              <ul>
                 <li>
@@ -281,3 +270,4 @@
     <script src="js/protect-app.start.js"></script>
 </body>
 </html>
+

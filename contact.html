@@ -3,7 +3,7 @@
 <head>
     <base href="/"> 
     <meta name="viewport" content="width=device-width", initial scale=1>
-    <title>Close Protect Boiler Template</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" type="text/css" src="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     
@@ -44,6 +44,7 @@
 
         }
          .navbar-header a img{
+                margin-left: 40px;
                 height: 70px;
                 width: 70px;
                 
@@ -56,12 +57,11 @@
                 width: 100%;
                 font-size: 2em; 
                 background-color:black;
-                opacity:.8;            
+                opacity:.8; 
+                margin-left: 250px;           
             }
             .bottom-menu ul a li{
-                float:left;
                 list-style:none;
-                width:10%;
                 height:100%; 
                 padding:5.0%;
                 opacity:0.5;
@@ -71,7 +71,7 @@
                 bottom-border: 4px solid black;
             }
             .bottom-menu ul li img{
-                margin-left: 150px;
+                margin-left: 60px;
                 height: 30px;
                 width: 30px;
                 opacity: .6;
@@ -80,7 +80,6 @@
                 opacity: 1;
              }
 
-         
             .bottom-menu ul {
                 list-style-type: none;
              }
@@ -92,22 +91,26 @@
          /**SIDEBAR (working but has bullets)**/
 
         #sidebar{
-            position: relative;
+            position: fixed;
+             float:left;
             margin-top: 15px;
-            height: 940px;
+            height: 980px;
          }
-         #sidebar a{
+         #sidebar ul li{
             list-style-type: none;
+            
+         }
+
+          #sidebar ul li a{
             color: white;
-            font-size: 20px;
+            font-size: 16px;
          }
 
-         #sidebar a img{
-            height: 130px;
-            width: 280px;
-         }
+            /** Main Content **/
 
-            /** Main Cntent **/
+        #MainContent{
+            position: fixed;
+        }
         
 
         /** Buttons**/
@@ -119,7 +122,7 @@
         .everything{
             margin-top: 100px;
             list-style-type: none;
-            height: 400px
+            height: 600px
         }
 
         
@@ -154,25 +157,22 @@
             <div class="col-sm-3">
                 <div id="sidebar">
                     <ul>
-                                <li><a href="/index.html"> HOME </a></li>
-                                <li><a href="/about.html"> ABOUT US</a></li>
-                                <li> <a href="/close-protection.html"> CLOSE PROTECTION</a></li>
-                            	<li> <a href="/cargotransport.html"> CARGO </a></li>
-                            	<li> <a href="/eventsecurity.html"> EVENT SECURITY </a></li>
-                            	<li> <a href="/dogs.html"> DOGS </a></li>
-                            	<li> <a href="/trainingpage.html"> TRAINING </a></li>
-                            	<li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li> 
-                            	
-                    			      
-                    		</ul>
-
-                    <ul>
+                        <li><a href="/index.html"> HOME </a></li>
+                        <li><a href="/about.html"> ABOUT US</a></li>
+                        <li> <a href="/close-protection.html"> CLOSE PROTECTION</a></li>
+                        <li> <a href="/cargotransport.html"> CARGO </a></li>
+                        <li> <a href="/eventsecurity.html"> EVENT SECURITY </a></li>
+                        <li> <a href="/dogs.html"> DOGS </a></li>
+                         <li> <a href="/trainingpage.html"> TRAINING </a></li>
+                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> NEWS </a></li>    	      
+                    </ul>
                 </div>
             </div>
     
           
-             <div class="col-sm-8">
-                <form name="registrationForm" ng-submit="submitForm()" novalidate>
+             <div class="col-sm-9">
+                <div id=MainContent">
+                    <form name="registrationForm" ng-submit="submitForm()" novalidate>
                     <div class="form-group">
                         <label>Please Enter First Name</label>
                         <input type="text" name="firstname" class="form-control" ng-model="user.firstname" required>
@@ -190,12 +190,12 @@
                     </div>
                      <div class="form-group">
                         <label>Telephone (please remember country code)</label>
-                        <input type="telephone" name="telephpne" class="form-control" ng-model="user.telephone" required>
+                        <input type="telephone" name="telephpne" placeholder="Telephone number" class="form-control" ng-model="user.telephone" required>
                         <p ng-show="registrationForm.country.$pristine" class="help-block">Telephone is required</p>
                     </div>
                      <div class="form-group">
                         <label>Email </label>
-                        <input type="email" name="email" class="form-control" ng-model="user.email" required>
+                        <input type="email" name="email" class="form-control" placeholder="email@something.com" ng-model="user.email" required>
                         <p ng-show="registrationForm.country.$pristine" class="help-block">Email is required</p>
                     </div>
                      <div class="form-group">
@@ -203,11 +203,7 @@
                         <input type="text" name="text" class="form-control" ng-model="user.text" required>
                         <p ng-show="registrationForm.country.$pristine" class="help-block">Text is required</p>
                     </div>
-                    <div class="form-group">
-                        <label>Please Tell Us Your Needs</label>
-                        <input type="text" name="text" class="form-control" ng-model="user.text" required>
-                        <p ng-show="registrationForm.country.$pristine" class="help-block">Text is required</p>
-                    </div>
+                    
                     <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
                 </form>
                 

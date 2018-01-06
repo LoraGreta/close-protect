@@ -71,7 +71,7 @@
                 bottom-border: 4px solid black;
             }
             .bottom-menu ul li img{
-                margin-left: 60px;
+                margin-left: 80px;
                 height: 30px;
                 width: 30px;
                 opacity: .6;
@@ -124,7 +124,9 @@
             list-style-type: none;
             height: 600px
         }
-
+        .message{
+            height: 100px;
+        }
         
     </style>
 
@@ -172,36 +174,39 @@
           
              <div class="col-sm-9">
                 <div id=MainContent">
-                    <form name="registrationForm" ng-submit="submitForm()" novalidate>
+                    <form name="registrationForm" ng-submit="submitForm()" novalidate><br>
                     <div class="form-group">
-                        <label>Please Enter First Name</label>
-                        <input type="text" name="firstname" class="form-control" ng-model="user.firstname" required>
+                        <label> PLEASE FILL IN ALL THE REQUIRED INFORMATION BELOW </label>
+                        <input type="text" name="title" placeholder="Title" class="form-control" ng-model="user.title" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="firstname" placeholder="First Name" class="form-control" ng-model="user.firstname" required>
                     </div>
 
                     <div class="form-group">
-                        <label>Please Enter Last Name</label>
-                        <input type="text" name="lastname" class="form-control" ng-model="user.lastname" required>
-                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your name is required</p>
+
+                        <input type="text" name="lastname" placeholder="Last Name" class="form-control" ng-model="user.lastname" required>
+                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your Surname Is Required</p>
                     </div>
                     <div class="form-group">
-                        <label>Country</label>
-                        <input type="country" name="country" class="form-control" ng-model="user.country" required>
-                        <p ng-show="registrationForm.country.$pristine" class="help-block">Your country is required</p>
+                        <input type="country" name="country" placeholder="Country" class="form-control" ng-model="user.country" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"</p>
                     </div>
                      <div class="form-group">
-                        <label>Telephone (please remember country code)</label>
-                        <input type="telephone" name="telephpne" placeholder="Telephone number" class="form-control" ng-model="user.telephone" required>
-                        <p ng-show="registrationForm.country.$pristine" class="help-block">Telephone is required</p>
+                        <input type="telephone" name="telephone" placeholder="Telephone number (Please Include Country Code)" class="form-control" ng-model="user.telephone" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
                     </div>
                      <div class="form-group">
-                        <label>Email </label>
+                        <label>Email Is Required</label>
                         <input type="email" name="email" class="form-control" placeholder="email@something.com" ng-model="user.email" required>
-                        <p ng-show="registrationForm.country.$pristine" class="help-block">Email is required</p>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
                     </div>
                      <div class="form-group">
-                        <label>Please Tell Us Your Needs</label>
-                        <input type="text" name="text" class="form-control" ng-model="user.text" required>
-                        <p ng-show="registrationForm.country.$pristine" class="help-block">Text is required</p>
+                        <div class="message">
+                            <label>Please Tell Us Your Needs</label>
+                            <input type="text" name="text" placeholder="Text Is Required" class="form-control" ng-model="user.text" required>
+                            <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
+                        </div>
                     </div>
                     
                     <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>

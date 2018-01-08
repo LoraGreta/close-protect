@@ -1,3 +1,204 @@
 <div>
    <h1>This is the home page. Everything we put in home.html will be displayed</h1>
 </div>
+
+<style>
+ /**BOTTOM NAVIGATION (Buttons won't space out)**/
+            .bottom-menu{
+                position:relative;
+                bottom:0;
+                width: 100%;
+                font-size: 2em; 
+                background-color:black;
+                opacity:.8;            
+            }
+            .bottom-menu ul a li{
+                float:left;
+                list-style:none;
+                width:18%;
+                height:100%; 
+                padding:5.0%;
+                opacity:0.5;
+                margin: 5px;  
+                text-align: center;
+                text-decoration: none;
+                bottom-border: 4px solid black;
+            }
+            .bottom-menu ul li img{
+                margin-left: 75px;
+                height: 30px;
+                width: 35px;
+                opacity: .6;
+            }
+            .bottom-menu ul li a:hover{
+                color: red;
+             }
+
+            .desc {
+                padding-bottom: 30px;
+             }
+
+            .bottom-menu ul {
+                list-style-type: none;
+             }
+
+             .bottom-menu ul li {
+                display : inline;
+             }
+
+         /**SIDEBAR (working but has bullets)**/
+
+        #sidebar{
+            position: relative;
+            margin-top: 15px;
+            height: 500px;
+         }
+         #sidebar ul li a{
+            color: white;
+            font-size: 16px;
+         }
+         #sidebar ul li{
+            list-style-type: none;
+            
+         }
+        #sidebar a img{
+            margin-top: 20px;
+            height: 260px;
+            width: 360px;
+            border: 5px solid black;
+         }
+
+        .row{
+            position: relative;
+            opacity:.6;
+            background-color: white;
+            border-radius: 5%;
+            display: block;
+            margin: 10px;
+        }
+        .everything{
+            margin-top: 100px;
+            list-style-type: none;
+        }
+
+        .row a{
+            margin: 2px;
+            border: 1px black;
+            background-color: #bc9b73;
+            color:black;
+
+        }
+        .btn-default{
+              display: block;
+              width: 25%;
+              margin: auto;
+              position: relative;
+              left: -38%;
+              float: right;
+        }
+        
+        p{
+            margin-left: 10px;
+        }
+    </style>
+
+    <div class="everything">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul>
+                        
+                        <li><a href="/about.html">  HISTORY </a></li> 
+                        <li> <a href="/contact.html"> CONTACT </a></li>
+                        <li> <a href="https://wordpress.com/posts/triadprotectionblog.wordpress.com"> NEWS </a></li> 
+
+                    </ul>  
+                    <a href="#"> <img src="img/greenwich.jpg"></a>       
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <div class=""> 
+                    <div class="">
+                        <div class="row">
+                        <h1> Close Protection </h1>
+                        <p> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure. Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed.</p> <br> <a href="/close-protection.html" role="button" class="btn btn-default"> Learn More </a>
+                    </div>
+                </div>
+
+
+                <div class=""> 
+                    <div class="">
+                        <div class="row">
+                        <h1> Cargo Transport </h1>
+                        <p> Out team is responsible for securing cargo and shipments from initial receipt to final destination. We have 20 years success in transporting valuable cargo amidst changing political climates across Europe and South Africa. We have secured contracts year on year with some of the world's leading companies. Our track record speaks for itself.</p> <br><a href="/cargotransport.html" role= "button" class= "btn btn-default"> Learn more </a>           
+                    </div>
+                </div>
+
+                <div class=""> 
+                    <div class="">
+                        <div class="row">
+                        <h1> Event Security </h1>
+                        <p> Whether you need Security for festivals, concerts, or sporting events in Europe, America, the UK or South Africa, we have experienced teams ready to assist. All our CPSE's  are experienced in event security and crowd control for festivals and riot control for more volatile situations. </p><br><a href="/eventsecurity.html" role="button" class= "btn btn-default"> Learn More </a>
+                    </div>
+                </div>
+
+                <div class=""> 
+                    <div class="">
+                        <div class="row">
+                        <h1> Protection Dogs </h1>
+                        <p> We supply Cane Corso Mastiffs trained to suit your needs. They can be given basic training only or any level of protection training needed. We have many references detailing how our dogs have become brilliant Estate Dogs. Gentle with children and families and protective of the family unit.</p><br><a href="/dogs.html" role="button" class= "btn btn-default"> Learn More </a> 
+                    </div>
+                </div>
+
+                <div class=""> 
+                    <div class="">
+                        <div class="row">
+                        <h1> Training </h1>
+                        <p> We provide classroom training in London to get your SIA licence with our SIA approved course. In addition, we provide tactical training (close range and sniper shooting, evasive car maneuvers, survival techniques) in our private location in Romania. Go beyond basic training and become trained in threat and risk assessment, operational planning, and law. </p><br><a href="/trainingpage.html" role="button" class= "btn btn-default"> Learn More </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+        <div class="bottom-menu">
+             <ul>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <img src="img/facebook.png">
+                    </a>
+                </li>
+                
+               <li>
+                    <a href="http://www.twitter.com">
+                        <img src="img/twitter.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.instagram.com">
+                        <img src="img/instagram.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/telephone.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.email.com">
+                        <img src="img/email.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.youtube.com">
+                        <img src="img/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>

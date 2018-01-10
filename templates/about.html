@@ -3,76 +3,36 @@
 <head>
     <base href="/"> 
     <meta name="viewport" content="width=device-width", initial scale=1>
-    <title>Close Protect</title>
+    <title> About </title>
     <link rel="stylesheet" type="text/css" src="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     
     <style type="text/css">
        
-         /**BACKGROUND**/   
-        body{     
-            background-image: url("img/background1.jpg");
-            background-repeat: contain;  
-            color:black;
-
-        }
-        img{
-            max-width: 100%;
-         }
-        h1{
-            text-align: center;
-            font-family: Arial;
-        }
-
-        
-    /** CONTAINER**/
-
-        .flexcontainer{
-            font-color: white;
-            display: flex;
-            display: -webkit-flex;
-            justify-content: space-between;
-            -webkit-flex-wrap:wrap;
-            padding-top: 25px;   
-
-        }
-        /**NAVBAR**/
-
-        .navbar a{
-            list-style-type: none;
-            color: white;
-
-        }
-         .navbar-header a img{
-                margin-left: 40px;
-                height: 70px;
-                width: 70px;
-                
-            }
 
         /**BOTTOM NAVIGATION (Buttons won't space out)**/
             .bottom-menu{
-                position: relative;
-                margin-left: 50px;
+                position:fixed;
                 bottom:0;
-                width: 1100px;
+                width: 100%;
                 font-size: 2em; 
                 background-color:black;
-                opacity:.8;          
+                opacity:.8;            
             }
             .bottom-menu ul a li{
+                float:left;
                 list-style:none;
-                width:13%;
+                width:10%;
                 height:100%; 
                 padding:5.0%;
                 opacity:0.5;
-                margin-left: 5px;  
+                margin: 5px;  
                 text-align: center;
                 text-decoration: none;
                 bottom-border: 4px solid black;
             }
             .bottom-menu ul li img{
-                margin-left: 120px;
+                margin-left: 150px;
                 height: 30px;
                 width: 30px;
                 opacity: .6;
@@ -93,48 +53,73 @@
          /**SIDEBAR (working but has bullets)**/
 
         #sidebar{
-            position: relative;        
+            position: relative;
             margin-top: 15px;
-            height: 400px;
+            height: 940px;
          }
-         #sidebar li a{
+         #sidebar a{
             color: white;
             font-size: 16px;
          }
-
          #sidebar ul li{
             list-style-type: none;
             
          }
 
          #sidebar a img{
-            margin-top: 10px;
-            margin-left:30px;
             height: 130px;
-            width: 250px;
+            width: 280px;
             border: 2px solid black;
          }
 
-            /** Main Content **/
+            /** Main Cntent **/
         .row-top{
             position: relative;
             opacity:.6;
             background-color: white;
-            border-radius: 5%;
+            border-radius: 10%;
             display: block;
-            margin: 5px;
+            margin: 10px;
             color:black;
-            height: 200px;
+            height: 230px;
         }
 
-        .row-bottom{
+        .row-top h4{
+            margin-left: 10px;
+        }
+
+        .row-middle h4{
+            margin-left: 10px;
+        }
+
+
+        .row-middle{
+            position: relative;
             opacity:.6;
             background-color: white;
-            border-radius: 5%;
+            border-radius: 10%;
             display: block;
-            margin: 5px;
+            margin: 10px;
             color:black;
-            height: 200px;
+            height: 230px;
+
+        }
+
+        .row-bottom h4{
+            margin-left: 270px;
+        }
+
+
+        .row-bottom{
+            position: relative;
+            opacity:.6;
+            background-color: white;
+            border-radius: 10%;
+            display: block;
+            margin: 10px;
+            color:black;
+            height: 100px;
+
         }
 
         .row-top a img{
@@ -144,38 +129,26 @@
             float:right;
             border:2px solid black;
         }
+
+        .row-middle a img{
+            height: 220px;
+            width: 220px;
+            opacity: 1;
+            float:left;
+            border:2px solid black;
+        }
         /** Buttons**/
 
         .btn{
-            margin-top: 20px;
-            margin-left:40px;
-            background-color: #bc9b73;
-            color: black;
-            border: 1px solid black;
+        margin: 10px;
 
         }
         .everything{
             margin-top: 100px;
             list-style-type: none;
-            height: 400px;
         }
 
-        .everything h4{
-            margin-left:5px;
-        }
-       
-        .everything-bottom{
-            width: 1100px;
-            height: 350px;
-            margin: 50px;
-            background-color: #72767c;
-            border-top: 20px solid black;
-            border-right: 20px solid black;
-        }
-        .row-bottom h4 a{
-            margin-left: 210px;
-        }
-
+        
     </style>
 
 </head> 
@@ -197,7 +170,7 @@
                         <h1> <a href="#"> THE TRIAD GROUP </a></h1>
                     </li>
                     <li class="toggle-topbar menu-icon navbar-right"> 
-                        <a href="#"><span> <em> TIGER TEAMS: CHECK IN AS SAFE </em>  </span></a>
+                        <a href="#"><span> <em> TIGER TEAMS: CHECK IN AS SAFE </em> </span></a>
                     <li>
                 </ul>
             </div>
@@ -205,14 +178,14 @@
 
         <div class="everything">
             <div class="col-sm-3">
-                <div id="sidebar"> 
+                <div id="sidebar">
                     <ul>
-                        <li><a href="/index.html"> HOME </a></li>
-                            <li><a href="/about.html"> ABOUT US</a></li>
-                            <li> <a href="/cargotransport.html"> TRANSPORT </a></li>
+                            <li><a href="/index.html"> HOME </a></li>
+                             <li><a href="/close-protection.html"> CLOSE PROTECTION</a></li>
+                            <li> <a href="/cargotransport.html"> CARGO </a></li>
                             <li> <a href="/eventsecurity.html"> EVENT SECURITY </a></li>
-                            <li> <a href="/trainingpage.html"> TRAINING </a></li>
                             <li> <a href="/dogs.html"> DOGS </a></li>
+                            <li> <a href="/trainingpage.html"> TRAINING </a></li>
                             <li> <a href="https://wordpress.com/posts/triadprotectionblog.wordpress.com"> NEWS </a></li>
                             <li> <a href="/contact.html"> CONTACT </a></li>
                     </ul>
@@ -222,43 +195,29 @@
             </div>
 
             <div class="col-sm-9">
-                <div class="maincontainer">
+                <div class="#">
+                    
                         <div class="row-top">
-                        <h1> Close Protection</h1>
+                        <h1> Military </h1>
                         <a href="#"><img src="img/closeprotection.jpg"></a>
-                        <h4> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure.  Each contract starts with an Initial Risk Assessment and we are methodical in our assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, stringent contact with outside individuals, and number of CPSE's needed. </h4> 
+                        <h4> Every member of our team has a military background. We feel a military background is important because it provides discipline and a mental fortitude which we know we can rely on in times which are challenging. In addition, we are proud of the diversity of our men and womens' military background. We have found by blending close protection team members whose military techniques and training are unique  based on the country they served, we have built a stronger unit that has gone from strength to strength. Diversity has become our strong point and we are proud to have over 12 different nationalities working together with a single focus: to make the Triad Group the best. </h4> 
                     </div>
 
+                    <div class="row-middle">
+                        <h1> Once Triad Was Born </h1>
+                        <h4> Triad Group was born when the 3 men, who had been on many successful contracts together over 20 years and in 10 countries, decided to come together to make a powerhouse protection firm. Instead of freelancing they came together because they knew that by uniting their 3 very diverse backgrounds that they would be able to offer the world something unique. They had the proven track record and the contacts. The three men were also not competing with each other: one was a security expert and ground/air strategist, one was a sniper, and one was an expert in hand-to-hand combat. By combining together, they could offer their services to discriminating clients in many countries. </h4>
+                    </div>
                     <div class="row-bottom">
-                        <h1> Services </h1>
-                        <h4> We provide <strong> chaffeurs</strong>,<strong> bodyguards</strong>, <strong>concierges</strong>, <strong>door supervisors</strong>, <strong>event security</strong>, and <strong>estate security protection experts</strong>. Please note that we do not hire outside contractors. We are a large nuclear group of individuals who have all worked together in teams for years on successful contracts, and we will supply you with the best matching expert(s) for your needs. We provide close protection for adults and children.<br> <a href="/contact.html" role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </a></h4>
-                        
+                        <h1> Our Philosophy</h1>
+                        <h4> Semper Fidelis (Always Faithful)
+                        </h4>
                     </div>
 
                 </div>
+
+         <a href="#" img src="img/security4.jpg">
+            </a>
             </div>
-        </div>
-
-        <div class= "everything-bottom">
-                <div class="col-md-3">
-                    <h2> Residential Security </h2>
-                    <p> We have experience  in providing seasonal, holiday, and yearly security in London, Paris, Dubai, Rome, and Johannesburg for residences and estates. We have several long-term contracts in London and we can provide expert teams or individuals. All our experts are experienced with CCTV, computers, alarm systems, ground control, and visitor control flow </p>
-                </div>
-            
-                <div class="col-md-3">
-                <h2> Firearms </h2> 
-                <p> Our experts are extremely experienced with firearms. We have experienced marksmen with proven track records. Since all our experts have military backgrounds, we are confident in our ability to protect our clientele. We also provide firearm training in Romania as part of our training courses. Please contact us for more information. </p>
-                 </div>
-            
-                <div class="col-md-3">
-                <h2> Door Supervisors </h2>
-                <p> We have experienced teams and individuals who are experienced in door work. Please contact us for availablity for one-off events or weekend work. Our doormen are selected for their calm, engaging personalies as well as physical ability and intellect. London and surrounding areas only. </p>
-                 </div>
-
-                 <div class="col-md-3">
-                <h2> Chauffeurs</h2>
-                <p> Our close-protection chauffeurs have been utilized in high profile custody cases where children needed protecting, divorce cases, celebrity night hopping, and for longer-term contracts where our clientele needed peace of mind. Our chauffeurs are all trained in defensive and offensive driving in London, Rio de Janeiro, and New York City. We also train individuals in Romania (subject to vetting and application approval).</p>
-                 </div>
         </div>
 
 

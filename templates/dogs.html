@@ -3,7 +3,7 @@
 <head>
     <base href="/"> 
     <meta name="viewport" content="width=device-width", initial scale=1>
-    <title>Close Protect Boiler Template</title>
+    <title>Dogs</title>
     <link rel="stylesheet" type="text/css" src="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     
@@ -36,19 +36,20 @@
         /**NAVBAR**/
 
         .navbar a{
+            margin-left: 20px;
             list-style-type: none;
             color: white;
 
-        }
+        } 
          .navbar-header a img{
+                margin-left: 40px;
                 height: 70px;
-                width: 70px;
-                
+                width: 70px;    
             }
 
-        /**BOTTOM NAVIGATION (Buttons won't space out)**/
+        /**BOTTOM NAVIGATION **/
             .bottom-menu{
-                position:fixed;
+                position:relative;
                 bottom:0;
                 width: 100%;
                 font-size: 2em; 
@@ -68,9 +69,9 @@
                 bottom-border: 4px solid black;
             }
             .bottom-menu ul li img{
-                margin-left: 150px;
-                height: 30px;
-                width: 30px;
+                margin-left: 80px;
+                height: 50px;
+                width: 50px;
                 opacity: .6;
             }
             .bottom-menu ul li a:hover{
@@ -89,7 +90,7 @@
                 display : inline;
              }
 
-         /**SIDEBAR (working but has bullets)**/
+         /**SIDEBAR **/
 
         #sidebar{
             position: relative;
@@ -97,84 +98,99 @@
             height: 940px;
          }
          #sidebar a{
-            list-style-type: none;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
+         }
+         #sidebar ul li{
+            list-style-type: none;  
          }
 
-        .row{
+         #sidebar img{
+            border: 2px solid black;
+         }
+         /**Main Content**/
+
+        .row-top{
             position: relative;
             opacity:.6;
             background-color: white;
             border-radius: 10%;
             display: block;
             margin: 10px;
+
         }
-        .everything{
-            margin-top: 100px;
-            list-style-type: none;
+        .row-bottom a img{
+            border:10px solid black;
+            opacity:1;
+            height: 400px;
+            width: 600px;
+            margin-left: 150px;
+
         }
 
-        
+        .everything{
+            margin-top: 100px;
+        }
+
+        .btn{
+            margin-top: 20px;
+            margin-left:320px;
+            margin-bottom: 20px;
+            background-color: #bc9b73;
+            color: black;
+            border: 1px solid black;
+
+        }
+      
     </style>
 
 </head> 
-<body ng-app='close-protect'>
-    <div class="container">    
-
-        <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="MainCtrl">
-            <div class="container">
-                <div class="navbar-header" data-top bar role="navigation">
-                    <a class="navbar-brand" href="#"> <img src="img/logo.png"></a>
-                </div>
-
-                        
-                    </a>
-                <!-- LOGO -->
-
-                <ul class="title-area">
-                    <li class-"name">
-                        <h1> <a href="#"> THE TRIAD GROUP </a></h1>
-                    </li>
-                    <li class="toggle-topbar menu-icon navbar-right"> 
-                        <a href="#"><span> CHECK AS SAFE </span></a>
-                    <li>
-                </ul>
-            </div>
-        </nav>
-
+<body>
         <div class="everything">
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <div id="sidebar">
                     <ul>
+                        <li><a href="/index.html"> HOME </a></li>
+                        <li><a href="/about.html"> ABOUT US </a></li>
+                        <li><a href="/close-protection.html"> CLOSE PROTECTION</a></li>
+                        <li><a href="/cargotranspport.html"> TRANSPORT </a></li>
+                        <li><a href="/eventsecurity.html"> EVENT SECURITY </a></li>
+                        <li><a href="/training.html"> TRAINING </a></li>
+                        <li><a href="/dogs.html">DOGS </a></li>
+                        <li> <a href="https://wordpress.com/posts/triadprotectionblog.wordpress.com"> NEWS </a></li>
+                        <li> <a href="/contact.html"> CONTACT </a></li>
                         
-                        <li class="has-dropdown"><a href="#"> ABOUT US </a></li>
-                            <ul class="dropdown"> <li><a href="#"> SERVICES</a></li>
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> LOCATIONS </a></li>
-                        
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> RECOMMENDATIONS </a></li> 
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> CONTACT </a></li>
-                        <li> <a href="http://edition.cnn.com/2013/02/08/business/south-africa-private-security/"> STATISTICS </a></li>
                     </ul>
+                    <img src="img/canecorso.jpg">
                     
                 </div>
             </div>
 
-            <div class="col-sm-9">
+            <div class="col-sm-10">
                 <div class="#">
                     <div class="#"> 
-                        <div class="row">
-                        <h1> CARGO TRANSPORT</h1>
-                        <p class="desc"> Whether it is in your home, whilst you are touring, traveling in areas where of concern, or need a security detail on business, our Close Protection Security Experts (CPSE) are trained to keep you secure. Each contract starts with an Initial Risk Assessment and is methodical in its assessment of all locations required, individuals to be protected, primary and secondary transportation necessary, contact with oustide individuals and number of CPSE's needed.  <a href="#"><img src="img/lorry.jpg">
-                        <role="button" class="btn btn-default"> CONTACT US FOR A NO-OBLIGATION RISK ASSESSMENT </a></p>
+                        <div class="row-top">
+                        <h1> First Gladiator Dogs </h1>
+                        <p class="desc"> Cane Corso Mastiff Puppies for Sale. Extremely well socialized to be good for families as both protection and companion dogs. The Cane Corso is a descendant of the canis pugnax, dogs used by the Romans in warfare. Its name derives from cane da corso, an old term for those catch dogs used in rural activities such as catching cattle and swine, and activities such as boar hunting and bear fighting. They are distinct from cane da camera which indicates the catch dog kept as a bodyguard. 
+                        Cane Corso were also used to guard property, livestock, and families, and some continue to be used for this purpose today. Historically it has also been used by night watchmen, keepers, and in the past, by carters and drovers. 
+                        <a href="https://www.facebook.com/canecorso.f.kennel" role="button" class="btn btn-default"> SEE OUR DOGS ON FACEBOOK</a>
+                        
+
+                        
+
+
+
                     </div>
                 </div>
 
+            <div class="row-bottom"> 
+                <h1> Dogs For Sale </h1>
+                <a href="#"> <img src="img/canecorso1.jpg"> </a>
+                <a href="#"> <img src="img/canecorso3.jpg"> </a>
+                <a href="#"> <img src="img/canecorso4.jpg"> </a>
 
-               
 
-
-        <div class="bottom-menu">
+    <div class="bottom-menu">
              <ul>
                 <li>
                     <a href="http://www.facebook.com">
@@ -227,3 +243,5 @@
     <script src="js/protect-app.start.js"></script>
 </body>
 </html>
+
+                

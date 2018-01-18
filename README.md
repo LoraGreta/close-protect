@@ -17,8 +17,6 @@ The front end of this website uses AngularJS to route viewers through the site. 
 
 
 ### Some the tech used includes
-- [AngularJS](https://angularjs.org/)
-    - AngularJS is used to handle page routing and to build custom directives
 - [Bootstrap](http://getbootstrap.com/)
     - I use Bootstrap to build a simple, responsive layout
 - [npm](https://www.npmjs.com/)
@@ -39,8 +37,6 @@ The front end of this website uses AngularJS to route viewers through the site. 
 
 
 ### Prerequisites and Installing
-- [AngularJS](https://angularjs.org/)
-    - AngularJS is used to handle page routing and to build custom directives
 - [Bootstrap](http://getbootstrap.com/)
     - I use Bootstrap to to build a simple, responsive layout
 - [npm](https://www.npmjs.com/)

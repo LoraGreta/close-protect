@@ -53,3 +53,4 @@ Laura Innis
 
 ##Acknowledgments
 Acknowledgement to the clients (Triad Corporation) who gave me creative license from concept design to full finished version.
+In addition, socual media icons made by [author link] from www.flaticon.com 

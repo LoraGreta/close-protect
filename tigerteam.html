@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title> SOS TIGER TEAM FORM </title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  
+    <style>
+       
+         /**BACKGROUND**/   
+        body{     
+            background-image: url("img/background1.jpg");
+            background-repeat: contain;  
+            color:black;
+        }
+        img{
+            max-width: 100%;
+         }
+        h1{
+            text-align: center;
+            font-family: Arial;
+        }
+
+        
+    /** CONTAINER**/
+
+        .flexcontainer{
+            font-color: white;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            -webkit-flex-wrap:wrap;
+            padding-top: 25px;   
+
+        }
+        /**NAVBAR**/
+
+        .navbar a{
+            list-style-type: none;
+            color: white;
+            padding: 3px;
+        }
+         .navbar-header a img{
+                margin-left: 40px;
+                height: 70px;
+                width: 70px;        
+            }
+
+        /**BOTTOM NAVIGATION **/
+        .bottom-menu{
+            position:relative;
+            bottom:0;
+            width: 100%;
+            font-size: 2em; 
+            background-color:black;
+            opacity:.8; 
+            margin-left: 250px;           
+        }
+        .bottom-menu ul a li{
+            list-style:none;
+            height:100%; 
+            padding:5.0%;
+            opacity:0.5;
+            margin: 5px;  
+            text-align: center;
+            text-decoration: none;
+            bottom-border: 4px solid black;
+        }
+        .bottom-menu ul li img{
+            margin-top: 0px;
+            margin-left: -160px;
+            height: 30px;
+            width: 30px;
+            opacity: .6;
+        }
+        .bottom-menu ul li a:hover{
+            opacity: 1;
+         }
+
+        .bottom-menu ul {
+            list-style-type: none;
+         }
+
+         .bottom-menu ul li {
+            display : inline;
+         }
+
+         /**SIDEBAR **/
+
+        #sidebar{
+            position: fixed;
+             float:left;
+            margin-top: 15px;
+            height: 980px;
+         }
+         #sidebar ul li{
+            list-style-type: none;
+            
+         }
+
+          #sidebar ul li a{
+            color: white;
+            font-size: 16px;
+         }
+
+            /** Main Content **/
+
+        #MainContent{
+            position: fixed;
+        }
+        
+
+        /** Buttons**/
+
+        .btn{
+            margin-top: 10px;
+
+        }
+        .everything{
+            margin-top: 100px;
+            list-style-type: none;
+            height: 600px
+        }
+        .message{
+            height: 100px;
+        }
+        .form-group{
+            color: #FF4500;
+            font-size: 20px;
+        }
+        
+    </style>
+</head> 
+<body>
+    <div class="container">    
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header" data-top bar role="navigation">
+                    <a class="navbar-brand" href="#"> <img src="img/logo.png"></a>
+                </div>
+
+                <!-- LOGO -->
+
+                <ul class="title-area">
+                    <li class= "name">
+                        <h1> <a href="#"> TIGER TEAM MANDATORY CHECK IN </a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon navbar-right"> 
+                    <li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="everything">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul> 
+                        <li><a href="index.html">  HOME </a></li>
+                        <li><a href="about.html">  ABOUT US </a></li>
+                        <li><a href="close-protection.html">  CLOSE PROTECTION </a></li> 
+                        <li> <a href="cargotransport.html"> CARGO TRANSPORT </a></li>
+                         <li> <a href="eventsecurity.html"> EVENT SECURITY </a></li>
+                        <li> <a href="dogs.html"> DOGS FOR SALE </a></li>
+                        <li> <a href="trainingpage.html"> TRAINING </a></li>
+                        <li> <a href="contact.html"> CONTACT US </a></li>
+                        <li> <a href="https://wordpress.com/posts/triadprotectionblog.wordpress.com"> NEWS </a></li>
+                    </ul>  
+                </div>
+            </div>
+    
+            <div class="col-sm-9">
+                <div id=MainContent">
+                    <form name="registrationForm" ng-submit="submitForm()" novalidate><br>
+                    <div class="form-group">
+                        <label> IF YOU NEED IMMEDIATE ASSISTANCE SKIP ALL STEPS AND CALL 24 HOTLINE FOR GLOBAL ASSISTANCE. YOU WILL BE GIVEN FURTHER INSTRUCTIONS. IF YOU CANNOT GET SIGNAL AND HAVE NOT CHECKED IN WITHIN THE LAST 3 HOURS, YOUR LOCATION IS BEING TRACKED VIA GPS AND YOUR ACCOUNT IS RED FLAGGED FOR HELP. OTHERWISE PLEASE FILL OUT MANDATORY INFORMATION BELOW. </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="firstname" placeholder="FIRST NAME" class="form-control" ng-model="user.firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lastname" placeholder="LAST NAME" class="form-control" ng-model="user.lastname" required>
+                        <p ng-show="registrationForm.name.$pristine" class="help-block"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="country" name="country" placeholder="COUNTRY OR REGION" class="form-control" ng-model="user.country" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"</p>
+                    </div>
+                     <div class="form-group">
+                        <input type="telephone" name="telephone" placeholder="LATITUDE" class="form-control" ng-model="user.telephone" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="telephone" name="telephone" placeholder="LONGITUDE" class="form-control" ng-model="user.telephone" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
+                    </div>
+                     <div class="form-group">
+                        <input type="text" name="text" class="form-control" placeholder="WILL YOU NEED ASSISTANCE IN THE NEXT 12-24 HOURS" ng-model="user.email" required>
+                        <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
+                    </div>
+                     <div class="form-group">
+                        <div class="message">
+                            <input type="text" name="text" placeholder="PEASE TELL US YOUR NEEDS OR INFORMATION ON POLITICAL CLIMATE" class="form-control" ng-model="user.text" required>
+                            <p ng-show="registrationForm.country.$pristine" class="help-block"></p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+                </form>    
+                </div>
+            </div>
+        </div>
+   
+        <div class="bottom-menu">
+             <ul>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <img src="img/facebook.png">
+                    </a>
+                </li>
+                
+               <li>
+                    <a href="http://www.twitter.com">
+                        <img src="img/twitter.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.instagram.com">
+                        <img src="img/instagram.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/telephone.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.email.com">
+                        <img src="img/email.jpg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.youtube.com">
+                        <img src="img/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>  
+</body>
+</html>
+
